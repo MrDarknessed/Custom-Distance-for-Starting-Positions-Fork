@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Mod id="ec6eeb15-7980-4f4f-b61b-64417fad87a5" version="1">
+	<Properties>
+		<Name>Custom Distance for Starting Positions</Name>
+		<Teaser>Increases spawning distance for major civilizations</Teaser>
+		<Description>This mod increases the minimum settler spawning distance between major civilizations at game start to 16 plots, instead of the regular 9.</Description>
+		<Authors>Jerzat (forked by MrDarknessed)</Authors>
+		<CompatibleVersions>1.2,2.0</CompatibleVersions>
+	</Properties>
+
+	<ActionCriteria>
+		<Criteria id="Expansion1">
+			<GameCoreInUse>Expansion1</GameCoreInUse>
+		</Criteria>
+		<Criteria id="Expansion2">
+			<GameCoreInUse>Expansion2</GameCoreInUse>
+		</Criteria>
+	</ActionCriteria>
+		
+    <!-- Files included -->
+	<Files>
+		<File>Config.xml</File>
+		<File>ConfigText.xml</File>
+		<File>Override/AssignStartingPlots.lua</File>
+	</Files>
+
+    <!-- Different parts of the mod -->
+	
+	
+	<FrontEndActions>
+		<UpdateDatabase id="Settings">
+			<File>Config.xml</File>
+		</UpdateDatabase>		
+		<UpdateText id="SettingsLocalization">
+			<File>ConfigText.xml</File>
+		</UpdateText>
+	</FrontEndActions>
+	
+	<Components>
+		<ImportFiles id="Import">
+			<Items>
+				<File>Override/AssignStartingPlots.lua</File>
+			</Items>
+		</ImportFiles>
+	</Components>
+	
+</Mod>
