@@ -4,7 +4,7 @@ Updated version of the mod "Custom Distance for Starting Positions" (https://ste
 Installation instruction
 On the Github page of the mod click on releases;
 Under assets click on  custom_distance_for_starting_positions.forked_by_MrDarknessed.zip and download it;
-Unzip the folder and move it to your Civilization 6 mod folder (usually its C:\Users\*your_username*\Documents\My Games\Sid Meier's Civilization VI\Mods);
+Unzip the folder and move it to your Civilization 6 mod folder (usually its C:\Users\your_username\Documents\My Games\Sid Meier's Civilization VI\Mods);
 Run the game and activate this mod.
 
 
